@@ -9,8 +9,8 @@ This project consists of Jupyter Notebooks and scripts designed to perform vario
 - Determined the top 3 handset manufacturers based on usage.
 - Listed the top 5 handsets for each of the top 3 manufacturers.
 - Provided a short interpretation of the findings and recommendations for marketing teams.
-**Task 1.1 - User Behavior Overview**
-**Task 1.2 - Exploratory Data Analysis (EDA**
+1.1. Task 1.1 - User Behavior Overview
+1.2 Task 1.2 - Exploratory Data Analysis (EDA
 ## Data Description
 - Described the dataset and displayed the data types of each variable.
 
