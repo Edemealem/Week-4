@@ -41,6 +41,43 @@ This project consists of Jupyter Notebooks and scripts designed to perform vario
 ## Dimensionality Reduction
 - Performed Principal Component Analysis (PCA) to reduce dimensionality and provide insights on the most significant variables driving data variance.
 
+# Task 2 - User Engagement Analysis
+
+## Engagement Metrics
+The following metrics will be tracked:
+- **Session Frequency**: Number of sessions per user.
+- **Duration of Sessions**: Total time spent per session.
+- **Total Traffic**: Combined download and upload traffic in bytes.
+
+## Steps
+
+### 2.1 Analysis Steps
+1. **Aggregate Metrics**:
+   - Calculate the above metrics per customer ID (MSISDN).
+   - Identify the top 10 customers for each engagement metric.
+
+2. **Normalize and Cluster**:
+   - Normalize each engagement metric.
+   - Apply k-means clustering (k=3) to classify customers into three engagement groups.
+
+3. **Cluster Analysis**:
+   - Compute minimum, maximum, average, and total non-normalized metrics for each cluster.
+   - Visualize and interpret the results.
+
+4. **Application Engagement**:
+   - Aggregate total traffic per application.
+   - Identify the top 10 most engaged users for each application.
+
+5. **Visualization**:
+   - Plot the top 3 most used applications using appropriate charts.
+
+6. **K-Means Optimization**:
+   - Determine the optimal value of k using the elbow method.
+   - Interpret the findings.
+
+## Conclusion
+This analysis provides valuable insights into user engagement, helping telecom companies enhance their services and allocate resources more effectively.
+
 ## Requirements
 
 - Python 3.10.12
