@@ -1,79 +1,51 @@
-# Week 2- Project Overview
-This project consists of Jupyter Notebooks and scripts designed to perform various data analysis tasks related to the week2 challenges.
+# Week 4- Project Overview
 
-## Completed Steps
+This project explores customer purchasing behavior and predicts store sales using machine learning and deep learning techniques. The final goal is to serve predictions via a web interface.
 
-1. **Task 1 - User Overview Analysis**:
-- Conducted a User Overview Analysis on a telecom dataset to understand customer behavior.
-- Identified the top 10 handsets used by customers.
-- Determined the top 3 handset manufacturers based on usage.
-- Listed the top 5 handsets for each of the top 3 manufacturers.
-- Provided a short interpretation of the findings and recommendations for marketing teams.
-### 1.1. Task 1.1 - User Behavior Overview
-### 1.2. Task 1.2 - Exploratory Data Analysis (EDA
-## Data Description
-- Described the dataset and displayed the data types of each variable.
+## Objectives
 
-## Data Cleaning
-- Handled missing values by replacing them with the mean for numeric columns.
-- Identified and treated outliers using methods like Z-score.
+- **Explore Customer Purchasing Behavior**
+- **Predict Store Sales**
+- **Implement Machine Learning and Deep Learning Approaches**
+- **Serve Predictions on a Web Interface**
 
-## Variable Transformations
-- Calculated the total duration for all sessions.
-- Segmented users into deciles based on total session duration.
-- Computed `Total DL+UL` data for each user.
+## Task 1: Exploration of Customer Purchasing Behavior
 
-## Basic Metrics Analysis
-- Analyzed basic metrics (mean, median, etc.) for the dataset to understand user behavior patterns.
+### Key Steps Taken
 
-## Univariate Analysis
-- Conducted non-graphical analysis by computing dispersion parameters (mean, median, std, min, max).
-- Performed graphical analysis using histograms and box plots to visualize distributions and identify outliers.
+1. **Data Cleaning**:
+   - Built pipelines to handle outliers and missing data.
 
-## Bivariate Analysis
-- Explored the relationship between each application’s data usage and `Total DL+UL`.
-- Computed the correlation matrix for relevant application data and interpreted the findings.
-- Visualized relationships using scatter plots for each application against `Total DL+UL`.
+2. **Exploratory Data Analysis (EDA)**:
+   - Conducted visualizations to understand data interactions and trends related to customer behavior.
 
-## Correlation Analysis
-- Computed a correlation matrix for selected application data (e.g., Social Media, Google, Email, YouTube, Netflix, Gaming, Other) and interpreted the results.
+3. **Key Questions Addressed**:
+   - Examined the impact of promotions, holidays, and competitor distance on sales.
+   - Analyzed seasonal purchasing behaviors and customer trends.
 
-## Dimensionality Reduction
-- Performed Principal Component Analysis (PCA) to reduce dimensionality and provide insights on the most significant variables driving data variance.
+4. **Deliverables**:
+   - An exploratory analysis notebook (`Task 1.ipynb`) located in the `notebooks` folder, providing insights and visualizations.
 
-# Task 2 - User Engagement Analysis
+### Logging
 
-## Engagement Metrics
-The following metrics will be tracked:
-- **Session Frequency**: Number of sessions per user.
-- **Duration of Sessions**: Total time spent per session.
-- **Total Traffic**: Combined download and upload traffic in bytes.
+- Implemented logging for traceability and reproducibility.
 
-## Steps
+## Requirements
 
-### 2.1 Analysis Steps
-1. **Aggregate Metrics**:
-   - Calculate the above metrics per customer ID (MSISDN).
-   - Identify the top 10 customers for each engagement metric.
+- **Python**: 3.10.12
+- **Libraries**:
+  - `matplotlib`
+  - `pandas`: 2.2.2
+  - `numpy`: 1.26.4
+  - `seaborn`: 0.13.2
+  - `jupyter`
 
-2. **Normalize and Cluster**:
-   - Normalize each engagement metric.
-   - Apply k-means clustering (k=3) to classify customers into three engagement groups.
+## How to Run
 
-3. **Cluster Analysis**:
-   - Compute minimum, maximum, average, and total non-normalized metrics for each cluster.
-   - Visualize and interpret the results.
+1. **Clone the Repository**:
 
-4. **Application Engagement**:
-   - Aggregate total traffic per application.
-   - Identify the top 10 most engaged users for each application.
-
-5. **Visualization**:
-   - Plot the top 3 most used applications using appropriate charts.
-
-6. **K-Means Optimization**:
-   - Determine the optimal value of k using the elbow method.
-   - Interpret the findings.
+   ```bash
+   git clone <URL>
 
 ## Conclusion
-This analysis provides valuable insights into user engagement, helping telecom companies enhance their services and allocate resources more effectively.
+This analysis provides valuable insights into user engagement.
