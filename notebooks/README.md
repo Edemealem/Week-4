@@ -1,4 +1,4 @@
-# Week 4- Project Overview
+# Week 4 - Project Overview
 
 This project explores customer purchasing behavior and predicts store sales using machine learning and deep learning techniques. The final goal is to serve predictions via a web interface.
 
@@ -30,7 +30,27 @@ This project explores customer purchasing behavior and predicts store sales usin
 
 - Implemented logging for traceability and reproducibility.
 
-## Requirements
+## Task 2: Prediction of Store Sales
+
+### Overview
+
+The goal of this task is to predict daily sales in various stores up to 6 weeks in advance. Accurate predictions will help the company plan for inventory and staffing effectively.
+
+### Key Steps
+
+1. **Preprocessing**:
+   - Cleaned data by converting non-numeric columns to numeric and handling missing values.
+   - Extracted features from datetime columns, including weekdays, weekends, and days to/from holidays.
+   - Scaled the data using Standard Scaler from `sklearn`.
+
+2. **Building Models**:
+   - Focused on regression models using sklearn pipelines, starting with tree-based algorithms like Random Forest Regressor.
+   - Utilized pipelines for a modular and reproducible modeling process.
+
+3. **Choosing a Loss Function**:
+   - Selected an appropriate loss function to evaluate model performance and provided justification for the choice.
+
+### Requirements
 
 - **Python**: 3.10.12
 - **Libraries**:
@@ -46,6 +66,3 @@ This project explores customer purchasing behavior and predicts store sales usin
 
    ```bash
    git clone <URL>
-
-## Conclusion
-This analysis provides valuable insights into user engagement.
